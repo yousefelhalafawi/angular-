@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "json-server --watch data.json",
+      "age": 20,
+      "email": "ahmed@gmail.com",
+      "phone": "011111111"
+    },
+    {
+      "name": "eng mostafa <3 <3",
+      "age": "22",
+      "email": "ali@gmail.com",
+      "phone": "0222222",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Osama",
+      "age": 25,
+      "email": "Osama@gmail.com",
+      "phone": "03333333"
+    }
+  ]
+}

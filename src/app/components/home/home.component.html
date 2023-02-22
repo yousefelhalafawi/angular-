@@ -1,0 +1,24 @@
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">details</th>
+      <th scope="col">update</th>
+      <th scope="col">delete</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let u of users">
+      <th scope="row">{{u.id}}</th>
+      <td>{{u.name}}</td>
+
+      <td><a [routerLink]="['/users/', u.id]"><button type="button" class="btn btn-success">Details</button></a></td>
+      <td><a [routerLink]="['/users/update/', u.id]"><button type="button" class="btn btn-warning">Update</button></a></td>
+      <!-- <td><button type="button" class="btn btn-warning" (click)="updatebyId(u.id)">Update</button></td> -->
+      <td> <button type="button" class="btn btn-danger" (click)="deleteById(u.id)">Delete</button> </td>
+    </tr>
+
+  </tbody>
+</table>
